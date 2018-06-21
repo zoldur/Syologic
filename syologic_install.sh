@@ -245,8 +245,8 @@ function setup_node() {
 ##### Main #####
 clear
 
-#checks
-#prepare_system
-#download_node
+checks
+prepare_system
+download_node
 setup_node
 
