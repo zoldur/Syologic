@@ -5,7 +5,7 @@ Use it on your own risk.
 
 ## Installation
 ```
-wget -N https://raw.githubusercontent.com/zoldur/Syologic/syologic_install.sh
+wget -N https://raw.githubusercontent.com/zoldur/Syologic/master/syologic_install.sh
 bash syologic_install.sh
 ```
 ***
