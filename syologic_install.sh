@@ -9,7 +9,7 @@ COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/zoldur/Syologic/releases/download/v1.0.0.1/syologic.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Syologic'
-COIN_PORT=3255
+COIN_PORT=68791
 RPC_PORT=15786
 
 NODEIP=$(curl -s4 icanhazip.com)
