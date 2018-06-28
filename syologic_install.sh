@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.syologic'
 COIN_DAEMON='syologicd'
 COIN_CLI='syologic-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/zoldur/Syologic/releases/download/v1.0.0.1/syologic.tar.gz'
+COIN_TGZ='https://github.com/SyoLogic/syologic-master/releases/download/v1.0.1.0/syologic-1.0.1-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Syologic'
 COIN_PORT=3255
@@ -25,7 +25,8 @@ function download_node() {
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  tar zxvzf $COIN_ZIP -C $COIN_PATH >/dev/null 2>&1
+  tar xvzf $COIN_ZIP  >/dev/null 2>&1
+  cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd - >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
   clear
