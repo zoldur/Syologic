@@ -25,7 +25,7 @@ function download_node() {
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   compile_error
-  tar xvzf $COIN_ZIP  --strip 2 >/dev/null 2>&1
+  tar xvzf $COIN_ZIP --strip 2 >/dev/null 2>&1
   cp $COIN_DAEMON $COIN_CLI $COIN_PATH
   cd - >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
@@ -122,6 +122,13 @@ maxconnections=256
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+addnode=49.28.150.144:3255
+addnode=80.211.70.95:3255
+addnode=45.76.154.124:3255
+addnode=149.28.103.90:3255
+addnode=212.237.34.10:3255
+addnode=212.237.33.84:3255
+addnode=212.237.37.192:3255
 EOF
 }
 
